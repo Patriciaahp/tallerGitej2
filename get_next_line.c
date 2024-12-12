@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pahernan <pahernan@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 17:33:31 by pahernan          #+#    #+#             */
-/*   Updated: 2024/12/12 17:43:59 by pahernan         ###   ########.fr       */
+/*   Created: 2024/12/12 17:44:52 by pahernan          #+#    #+#             */
+/*   Updated: 2024/12/12 17:45:27 by pahernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stdio.h> 
+#include <unistd.h> 
 
-int main (void)
+void	ft_putchar(char c)
 {
-	printf("%s\n", "Hola mundo!");
-	return (0);
+	write(1, &c, 1);
 }
