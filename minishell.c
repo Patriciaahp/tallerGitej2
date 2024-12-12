@@ -3,17 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pahernan <pahernan@student.42malaga.com    +#+  +:+       +#+        */
+/*   By:  pedrrodr < pedrrodr@student.42malaga.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 17:33:31 by pahernan          #+#    #+#             */
-/*   Updated: 2024/12/12 17:35:32 by pahernan         ###   ########.fr       */
+/*   Updated: 2024/12/12 17:48:02 by  pedrrodr        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int main (void)
+void ft_putstr (char *str)
 {
-	printf("%s\n", "Hola mundo!");
-	return (0);
+	int i;
+	i = 0;
+	
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
